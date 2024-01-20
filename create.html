@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant-Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="create.css">
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#Indian">Indian</a></li>
+                <li><a href="#Italian">Italian</a></li>
+                <li><a href="#food">Japanese</a></li>
+                <li><a href="#menu">Chinese</a></li>
+                <li><a href="#testimonials">Mexican</a></li>
+                <li><a href="#contact">French</a></li>
+            </ul>
+            <h1 class="logo">Destiny</h1>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small"></p>
+                
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 70px;" id="food-menu">
+    <!-- Indian Cuisine Section -->
+    <section id="Indian">
+        <h2 class="food-menu-heading">Indian cuisine section</h2>
+        <div class="food-menu-container container"  id="firebase-data-indian">
+        </div>
+    </section>
+
+    <!-- Italian Cuisine Section -->
+    <section id="Italian" class="food-menu-section">
+        <h2 class="food-menu-heading">Italian cuisine section</h2>
+        <div class="food-menu-container container" id="firebase-data-italian">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Add sections for other cuisines -->
+            
+    <section id="Chinese" class="food-menu-section">
+        <h2 class="food-menu-heading">Chinese cuisine section</h2>
+        <div class="food-menu-container container" id="firebase-data-chinese">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </section>
+    <section id="Mexican" class="food-menu-section">
+        <h2 class="food-menu-heading">Mexican cuisine section</h2>
+        <div class="food-menu-container container" id="firebase-data-mexican">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </section>
+    <section id="French" class="food-menu-section">
+        <h2 class="food-menu-heading">French cuisine section</h2>
+        <div class="food-menu-container container" id="firebase-data-french">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </section>
+</section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+
+    <script type="module" src="create.js"></script>
+
+</body>
+
+</html>
